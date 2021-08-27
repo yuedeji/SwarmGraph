@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+INF	util.h	/^const int INF = 0x7fffffff;$/;"	v
+INFTY	util.h	14;"	d
+LOCK	util.h	7;"	d
+ORPHAN	util.h	15;"	d
+UNLOCK	util.h	8;"	d
+UNVIS	util.h	16;"	d
+V	util.h	/^const int V = 1024;$/;"	v
+__APSP_GPU_H__	apsp_gpu.h	11;"	d
+__BC_GPU_H__	bc_gpu.h	13;"	d
+__CC_GPU_H__	cc_gpu.h	11;"	d
+__GRAPH_H__	graph.h	2;"	d
+__H_TIME__	wtime.h	2;"	d
+__UTIL_H__	util.h	2;"	d
+apsp_all	cc_gpu.h	/^__global__ void apsp_all(index_t * dev_beg_pos, $/;"	f
+apsp_gpu_launch	apsp_gpu.h	/^void apsp_gpu_launch(graph *g, path_t *dist)\/\/, int start_vert, int end_vert)$/;"	f
+bc_all	bc_gpu.h	/^__global__ void bc_all(index_t * dev_beg_pos, $/;"	f
+bc_gpu_launch	bc_gpu.h	/^void bc_gpu_launch(graph *g, path_t *bc_global)$/;"	f
+bc_merge	bc_gpu.h	/^__global__ void bc_merge(path_t * dev_bc)$/;"	f
+beg_pos	graph.h	/^		index_t *beg_pos;$/;"	m	class:graph
+cc	Makefile	/^cc = "$(shell which nvcc)" $/;"	m
+cc_gpu_launch	cc_gpu.h	/^void cc_gpu_launch(graph *g, path_t *global_cc)\/\/, int start_vert, int end_vert)$/;"	f
+cc_merge	cc_gpu.h	/^__global__ void cc_merge(path_t *dev_dist,$/;"	f
+csr	graph.h	/^		vertex_t *csr;$/;"	m	class:graph
+deal	debug.bash	/^deal () {$/;"	f
+deps	Makefile	/^deps = $(wildcard ..\/..\/lib\/*.h) \\$/;"	m
+depth_t	util.h	/^typedef long depth_t;$/;"	t
+edge_count	graph.h	/^		index_t edge_count;$/;"	m	class:graph
+exe	Makefile	/^exe = minions$/;"	m
+flags	Makefile	/^flags = -I. -Xcompiler -fopenmp$/;"	m
+fsize	util.h	/^inline off_t fsize(const char *filename) {$/;"	f
+get_vert_edge_count	graph.cu	/^void get_vert_edge_count(const char * file_name, index_t &vert_count, index_t &edge_count)$/;"	f
+gpuAssert	apsp_gpu.h	/^inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)$/;"	f
+gpuAssert	util.h	/^inline void gpuAssert(cudaError_t code, const char *file, int line, bool abort=true)$/;"	f
+gpuErrchk	apsp_gpu.h	25;"	d
+gpuErrchk	bc_gpu.h	26;"	d
+gpuErrchk	util.h	21;"	d
+graph	graph.cu	/^graph::graph(const char *edgelist_file)$/;"	f	class:graph
+graph	graph.h	/^		graph(){};$/;"	f	class:graph
+graph	graph.h	/^class graph$/;"	c
+index_t	util.h	/^typedef long index_t;$/;"	t
+main	minions.cu	/^int main(int args, char ** argv)$/;"	f
+objs	Makefile	/^objs = $(patsubst %.cu,%.o,$(wildcard ..\/..\/lib\/*.cu))\\$/;"	m
+path_t	util.h	/^typedef double path_t;$/;"	t
+vert_count	graph.h	/^		index_t vert_count;$/;"	m	class:graph
+vertex_t	util.h	/^typedef long vertex_t;$/;"	t
+weight	graph.h	/^		path_t *weight;$/;"	m	class:graph
+work_on_one	minions.cu	/^void work_on_one(char *file_edge_list, int device_id)$/;"	f
+wtime	wtime.h	/^inline double wtime()$/;"	f
+~graph	graph.h	/^		~graph(){};$/;"	f	class:graph
